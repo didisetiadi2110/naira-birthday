@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#fff0f6">
+  <meta name="description" content="A little birthday surprise for Naira, my sweetest girl.">
+  <title>To My Sweetest Girl · Naira</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+    :root{--pink:#f276a6;--deep:#8d426c;--ink:#67465d;--cream:#fffafc;--lilac:#eee6ff;--mint:#e9f6ef}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff5f9;color:var(--ink);font-family:'DM Sans',sans-serif;overflow-x:hidden}
+    button{font:inherit}.scene{position:fixed;inset:0;pointer-events:none;z-index:5;overflow:hidden}.floaty{position:absolute;top:-50px;animation:fall linear infinite;opacity:.68;filter:drop-shadow(0 2px 4px #c86c9a22)}@keyframes fall{to{transform:translateY(115vh) rotate(340deg)}}
+    .sparkle{position:absolute;color:#f6c455;animation:twinkle 2s ease-in-out infinite alternate}@keyframes twinkle{to{transform:scale(.55) rotate(45deg);opacity:.35}}
+    .cover{min-height:100svh;display:grid;place-items:center;padding:28px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 15% 15%,#fff 0,transparent 35%),radial-gradient(ellipse at 85% 82%,#ffe0ec 0,transparent 38%),linear-gradient(140deg,#fff6fa,#f8edff 55%,#fff4e9)}
+    .cover:before,.cover:after{content:'🦄　🌈　🎀　🧁　💗　🐴　✨';position:absolute;white-space:nowrap;font-size:clamp(22px,4vw,42px);opacity:.28;animation:drift 24s linear infinite}.cover:before{top:8%;left:-20%}.cover:after{bottom:9%;right:-25%;animation-direction:reverse}@keyframes drift{to{transform:translateX(28vw)}}
+    .cover-card{width:min(540px,100%);padding:clamp(34px,7vw,66px) 28px;text-align:center;border:1px solid #fff;background:#ffffffbd;backdrop-filter:blur(12px);border-radius:34px;box-shadow:0 24px 80px #b9558330;position:relative;z-index:1;transition:transform .75s,opacity .65s}.cover-card h1,.hero h1{font:600 clamp(42px,9vw,72px)/1.04 'Playfair Display',serif;color:var(--deep);margin:12px 0}.eyebrow{font-size:12px;letter-spacing:.25em;text-transform:uppercase;color:#c05f8c;font-weight:700}.cover-card p{line-height:1.7;color:#94778a}.crown{font-size:47px;display:block;animation:bob 2.5s ease-in-out infinite}@keyframes bob{50%{transform:translateY(-8px) rotate(-5deg)}}
+    .open-btn{border:0;border-radius:999px;padding:16px 25px;background:linear-gradient(135deg,#f17fac,#d977b3);color:white;font-weight:700;box-shadow:0 10px 24px #d66a9d55;cursor:pointer;transition:.2s}.open-btn:hover{transform:translateY(-3px);box-shadow:0 14px 30px #d66a9d66}.hint{font-size:12px!important;margin-top:18px!important}
+    .count{font:600 clamp(90px,24vw,180px)/1 'Playfair Display',serif;color:#d778a4;text-shadow:0 12px 40px #e19bb877;animation:pop .8s cubic-bezier(.2,1.6,.4,1)}@keyframes pop{from{transform:scale(.15) rotate(-35deg);opacity:0}to{transform:scale(1);opacity:1}}
+    #surprise{display:none;transform-origin:center;min-height:100vh;background:linear-gradient(180deg,#fff4f9,#fffaf6 47%,#f7f2ff);animation:unfold .95s cubic-bezier(.2,.75,.25,1) both}@keyframes unfold{0%{opacity:0;transform:perspective(1000px) rotateY(84deg) scale(.8)}100%{opacity:1;transform:perspective(1000px) rotateY(0) scale(1)}}
+    .wrap{width:min(1020px,calc(100% - 38px));margin:auto}.hero{text-align:center;padding:94px 12px 66px;position:relative}.hero .sub{font:500 clamp(19px,4vw,27px) 'Playfair Display',serif;color:#bb6693}.hero .date{display:inline-block;margin-top:18px;padding:9px 16px;border-radius:99px;background:white;box-shadow:0 5px 20px #b65f8b16;color:#a55e83;font-size:13px}.pony{position:absolute;font-size:clamp(36px,7vw,70px);animation:pony 4s ease-in-out infinite}.pony.left{left:5%;top:40%}.pony.right{right:5%;top:26%;animation-delay:-1.2s}@keyframes pony{50%{transform:translateY(-12px) rotate(8deg)}}
+    .section{padding:48px 0}.section-title{text-align:center;font:600 clamp(29px,6vw,42px) 'Playfair Display',serif;color:var(--deep);margin:0 0 25px}.letter{max-width:740px;margin:auto;padding:clamp(25px,6vw,48px);background:#fff;border:1px solid #ffe2ee;border-radius:26px;box-shadow:0 18px 55px #a7537814;position:relative;line-height:1.9}.letter:before{content:'💌';font-size:36px;position:absolute;right:22px;top:-24px}.letter p{margin:0 0 16px}.letter .sign{font:600 24px 'Playfair Display',serif;color:#bd6390;margin:22px 0 0}
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.photo{aspect-ratio:4/5;border-radius:22px;overflow:hidden;background:linear-gradient(145deg,#fce0ec,#eee5ff 55%,#fff0d9);box-shadow:0 12px 28px #9b557d16;position:relative}.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}.photo figcaption{position:absolute;inset:auto 0 0;background:linear-gradient(transparent,#563547aa);color:white;padding:38px 14px 13px;font-size:13px}.photo .placeholder{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:15px;color:#9f6d89;font-size:14px}.photo .placeholder span{display:block;font-size:40px;margin-bottom:10px}
+    .love-card{max-width:760px;margin:auto;min-height:320px;border-radius:32px;overflow:hidden;background:linear-gradient(110deg,#e9d9ff,#ffe0ec);display:grid;grid-template-columns:1fr 1fr;box-shadow:0 20px 55px #86548420}.love-photo{min-height:320px;background:linear-gradient(145deg,#f8d9e8,#e8dcff);display:grid;place-items:center;text-align:center;color:#9f6c91;padding:22px}.love-photo img{width:100%;height:100%;object-fit:cover;grid-area:1/1}.love-photo .photo-note{grid-area:1/1;font-size:14px}.love-copy{display:grid;align-content:center;padding:34px;text-align:center}.love-copy .script{font:600 clamp(30px,5vw,43px)/1.15 'Playfair Display',serif;color:#963f73}.love-copy p{line-height:1.7;color:#8d6e88}.footer{text-align:center;padding:54px 16px 70px;color:#b1809c;font-size:13px}.footer .heart{font-size:26px}
+    .wish-section{min-height:570px;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden;background:#fffafd;padding:76px 16px}.wish-inner{max-width:760px}.wish-eyebrow{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:#e45f98;font-weight:700}.wish-section h2{font:700 clamp(34px,6vw,52px)/1.15 'Playfair Display',serif;color:#704464;margin:13px 0 18px}.wish-section p{color:#98798d}.cake-button{border:0;background:none;cursor:pointer;font-size:76px;padding:24px;filter:drop-shadow(0 12px 15px #ed8bb655);animation:bob 2.2s ease-in-out infinite;transition:transform .2s}.cake-button:hover{transform:scale(1.1)}.wish-button{display:block;margin:4px auto 20px;border:0;border-radius:999px;padding:16px 26px;color:white;font-weight:700;background:linear-gradient(120deg,#fa8fbd,#e95e9c);box-shadow:0 10px 24px #e95d9a40;cursor:pointer}.wish-button:active{transform:scale(.97)}.wish-result{min-height:28px;color:#df528e!important;font-weight:700}.wish-spark{position:absolute;color:#f7abc9;font-size:20px;animation:twinkle 2s infinite alternate}.wish-spark.one{top:13%;left:12%}.wish-spark.two{top:27%;right:10%;animation-delay:.7s}.wish-spark.three{bottom:15%;left:19%;animation-delay:1.2s}
+    @media(max-width:740px){.gallery{grid-template-columns:repeat(2,1fr)}.pony.left{left:2%;top:8%}.pony.right{right:2%;top:58%}.hero{padding-top:75px}}@media(max-width:520px){.love-card{grid-template-columns:1fr}.love-photo{min-height:260px}.love-copy{padding:28px}.cover-card{border-radius:27px}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+  </style>
+</head>
+<body>
+  <div class="scene" id="scene" aria-hidden="true"></div>
+  <section class="cover" id="cover">
+    <div class="cover-card" id="coverCard">
+      <span class="crown">👑</span><div class="eyebrow">a little birthday surprise</div>
+      <h1>For Naira</h1>
+      <p>For my sweetest girl, who makes every ordinary day feel a little more magical.</p>
+      <button class="open-btn" id="openBtn">Open Your Little Surprise <span aria-hidden="true">💗</span></button>
+      <p class="hint">Putar volume-mu, sayang ✨</p>
+    </div>
+  </section>
+  <audio id="birthdaySong" preload="auto" loop><source src="assets/music/birthday-song.mp3.mp3" type="audio/mpeg"></audio>
+  <main id="surprise">
+    <header class="hero wrap">
+      <span class="pony left" aria-hidden="true">🦄</span><span class="pony right" aria-hidden="true">🐴</span>
+      <div class="eyebrow">made with all my love</div>
+      <h1>To My Sweetest Girl</h1>
+      <div class="sub">Naira, You Make My Little World More Beautiful. 💗</div>
+      <div class="date">🎂 October 25 · Your very special day</div>
+    </header>
+    <section class="section wrap"><h2 class="section-title">A little letter for you</h2>
+      <article class="letter">
+        <p>My dearest Naira,</p>
+        <p>Happy birthday, my sweetest girl. Hari ini adalah hari yang istimewa karena dunia pernah menghadirkan seseorang seindah kamu. Terima kasih sudah menjadi rumah yang hangat, tawa di hari-hari biasa, dan alasan kecil di balik banyak bahagiaku.</p>
+        <p>Di usia barumu, semoga langkahmu selalu ditemani hal-hal baik. Semoga sehat dan bahagia selalu, semua impianmu menemukan jalannya, dan hatimu tetap dikelilingi cinta yang tulus. Saat hari terasa berat, semoga kamu selalu ingat betapa berharga dan dicintainya dirimu.</p>
+        <p>Aku ingin terus menemani cerita-ceritamu, merayakan hal-hal kecil bersamamu, dan membuat lebih banyak kenangan manis. Semoga ulang tahun ini membawa senyum sebanyak yang selama ini kamu berikan kepadaku.</p>
+        <p>Happy birthday, Naira. I love you more than all the stars in our little sky. 💗</p>
+        <p class="sign">Always yours, Didi 💌</p>
+      </article>
+    </section>
+    <section class="section wrap"><h2 class="section-title">Our little moments 📸</h2>
+    <div class="gallery">
+        <figure class="photo"><img src="assets/photos/moment-1.jpg.jpeg" alt="Kenangan manis bersama Naira" onload="this.nextElementSibling.nextElementSibling.hidden=true" onerror="this.remove()"><figcaption>One of my favorite days 💗</figcaption><div class="placeholder"><div><span>🌷</span>Tambahkan foto momen 1</div></div></figure>
+        <figure class="photo"><img src="assets/photos/moment-2.jpg.jpeg" alt="Momen bahagia bersama Naira" onload="this.nextElementSibling.nextElementSibling.hidden=true" onerror="this.remove()"><figcaption>Your smile, my sunshine ☀️</figcaption><div class="placeholder"><div><span>🌈</span>Tambahkan foto momen 2</div></div></figure>
+        <figure class="photo"><img src="assets/photos/moment-3.jpg.jpeg" alt="Kenangan indah kalian berdua" onload="this.nextElementSibling.nextElementSibling.hidden=true" onerror="this.remove()"><figcaption>Us, being us ✨</figcaption><div class="placeholder"><div><span>🎀</span>Tambahkan foto momen 3</div></div></figure>
+        <figure class="photo"><img src="assets/photos/moment-4.jpg.jpeg" alt="Momen spesial bersama Naira" onload="this.nextElementSibling.nextElementSibling.hidden=true" onerror="this.remove()"><figcaption>A memory I keep close 💌</figcaption><div class="placeholder"><div><span>🧁</span>Tambahkan foto momen 4</div></div></figure>
+      </div>
+    </section>
+    <section class="section wrap"><div class="love-card"><div class="love-photo"><img src="assets/photos/naira.jpg.jpeg" alt="Foto Naira" onload="this.nextElementSibling.hidden=true" onerror="this.remove()"><div class="photo-note">Tambahkan foto Naira di sini 🌸</div></div><div class="love-copy"><div class="eyebrow">my favorite person</div><div class="script">My Love,<br>My Sweetest Girl</div><p>My whole little world is brighter with you in it. 🦄💗</p></div></div></section>
+    <section class="wish-section" aria-labelledby="wishTitle"><span class="wish-spark one">♡</span><span class="wish-spark two">✦</span><span class="wish-spark three">♡</span><div class="wish-inner"><div class="wish-eyebrow">make a wish</div><h2 id="wishTitle">Tiup lilinnya, sayang! 🎂</h2><p>Tekan kuenya dan kirim satu doa manis ke semesta.</p><button class="cake-button" id="cakeButton" aria-label="Tiup lilin ulang tahun">🎂</button><button class="wish-button" id="wishButton">Aku sudah berdoa ✨</button><p class="wish-result" id="wishResult" aria-live="polite"></p></div></section>
+    <footer class="footer"><div class="heart">💗</div>Made with love, just for Naira · October 25</footer>
+  </main>
+  <script>
+    const cover=document.getElementById('cover'),card=document.getElementById('coverCard'),button=document.getElementById('openBtn'),main=document.getElementById('surprise'),audio=document.getElementById('birthdaySong'),scene=document.getElementById('scene');
+    let opened=false;
+    button.addEventListener('click',async()=>{if(opened)return;opened=true;button.disabled=true;audio.volume=.45;audio.play().catch(()=>{});for(const n of [3,2,1]){card.innerHTML=`<div class="count">${n}</div>`;await new Promise(r=>setTimeout(r,850))}cover.style.display='none';main.style.display='block';window.scrollTo(0,0);});
+    const wishResult=document.getElementById('wishResult');let wished=false;document.getElementById('wishButton').addEventListener('click',()=>{if(wished){wishResult.textContent='Doa baikmu sudah melayang ke semesta 💗';return}wished=true;wishResult.textContent='Aamiin! Semoga doa-doa baikmu menemukan jalannya. Aku ikut mendoakan yang terbaik buat kamu. 💗';document.getElementById('cakeButton').textContent='🕯️';document.getElementById('cakeButton').setAttribute('aria-label','Lilin ulang tahun sudah ditiup');});document.getElementById('cakeButton').addEventListener('click',()=>{wishResult.textContent=wished?'Yeay, lilinnya sudah ditiup! ✨':'Pejamkan mata, buat satu doa, lalu tekan tombol pink ya 💗'});
+    const icons=['💗','💕','✨','🌸','🎀','⭐'];for(let i=0;i<28;i++){const e=document.createElement('span');e.className=i%4===0?'sparkle':'floaty';e.textContent=icons[Math.floor(Math.random()*icons.length)];e.style.left=Math.random()*100+'%';e.style.animationDelay=(-Math.random()*18)+'s';e.style.animationDuration=(12+Math.random()*14)+'s';e.style.fontSize=(12+Math.random()*18)+'px';scene.appendChild(e)}
+  </script>
+</body>
+</html>
+
